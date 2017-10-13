@@ -237,7 +237,16 @@
     
     <div id="contactus" class="tab-pane fade">
     <p>Contact details</p>
-    </div>
+						<form action="mailerServlet" method="post">
+							<p>Name:</p> <input type="text" name="username" required="required" /><br>
+							<p>Email:</p> <input type="email" name="email" required="required" />
+							<p>Query Summary: </p><input name="summary" type="text"
+								required="required" /><br> 
+							<p>Query Description: </p>
+							<input name="description" type="text" required="required" /><br>
+							<input type="submit">
+						</form>
+					</div>
     </div>
     </div>
   </div>
